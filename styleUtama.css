@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    backdrop-filter: blur(20px);
+}
+header .logo
+{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2em;
+}
+header ul 
+{
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+header ul li
+{
+    list-style: none;
+}
+header ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+header ul li.active1 a
+{
+    color: #45f3ff;
+}
+header ul li.active2 a
+{
+    color: #ff2770;
+}
+header ul li.active4 a
+{
+    color: #45f3ff;
+}
+header ul li.active5 a
+{
+    color: #ff2770;
+}
+
+#home
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+#home::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    height: 25vw;
+    background: #ff2770;
+    border-top-right-radius: 25vw;
+    border-top-left-radius: 25vw;
+}
+#home .content
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+    z-index: 10;
+}
+#home .content h2
+{
+    position: relative;
+    font-size: 5em;
+    color: #ff2770;
+}
+#home .content p
+{
+    position: relative;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+.btn
+{
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+    max-width: 200px;
+    background: #45f3ff;
+    color: #222;
+    text-align: center;
+    padding: 18px 30px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-top: 10px;
+}
+#home .men
+{
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+    max-height: 90vh;
+}
+#services,
+#contact
+{
+    position: relative;
+    background: #34353a;
+    min-height: 50vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.secText
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.secText h2
+{
+    font-size: 3em;
+    color: #fff;
+}
+.secText p
+{
+    max-width: 700px;
+    text-align: center;
+    color: #aaa;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+#services .content
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    margin: 40px 0;
+}
+#services .content .servicesBx1
+{
+    background: #2e2f34;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #2e2f34;
+}
+#services .content .servicesBx2
+{
+    background: #2e2f34;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #2e2f34;
+}
+#services .content .servicesBx3
+{
+    background: #2e2f34;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #2e2f34;
+}
+#services .content .servicesBx4
+{
+    background: #2e2f34;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #2e2f34;
+}
+#services .content .servicesBx1:hover
+{
+    border: 2px solid #ff2770;
+}
+#services .content .servicesBx2:hover
+{
+    border: 2px solid #45f3ff;
+}
+#services .content .servicesBx3:hover
+{
+    border: 2px solid #ff2770;
+}
+#services .content .servicesBx4:hover
+{
+    border: 2px solid #45f3ff;
+}
+#services .content .servicesBx1 img
+{
+    max-width: 100px;
+    filter: invert(1);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+#services .content .servicesBx2 img
+{
+    max-width: 100px;
+    filter: invert(1);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+#services .content .servicesBx3 img
+{
+    max-width: 100px;
+    filter: invert(1);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+#services .content .servicesBx4 img
+{
+    max-width: 100px;
+    filter: invert(1);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+#services .content .servicesBx1:hover img
+{
+    opacity: 1;
+}
+#services .content .servicesBx2:hover img
+{
+    opacity: 1;
+}
+#services .content .servicesBx3:hover img
+{
+    opacity: 1;
+}
+#services .content .servicesBx4:hover img
+{
+    opacity: 1;
+}
+#services .content .servicesBx1 h3
+{
+    color: #fff;
+    font-weight: 500;
+    color: #ff2770;
+}
+#services .content .servicesBx2 h3
+{
+    color: #fff;
+    font-weight: 500;
+    color: #45f3ff;
+}
+#services .content .servicesBx3 h3
+{
+    color: #fff;
+    font-weight: 500;
+    color: #ff2770;
+}
+#services .content .servicesBx4 h3
+{
+    color: #fff;
+    font-weight: 500;
+    color: #45f3ff;
+}
+.center
+{
+    width: 100%;
+    text-align: center;
+}
+#contact
+{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:start;
+}
+#contact p:nth-child(1)
+{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#contact p:nth-child(2)
+{
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social
+{
+    display: flex;
+}
+.social a
+{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff2770;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover
+{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end
+{
+    position: absolute;
+    color: #45f3ff;
+    bottom: 60px;
+    font-size: 14px;
+}
